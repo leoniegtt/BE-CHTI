@@ -357,7 +357,7 @@
               <MiscControls></MiscControls>
               <Define></Define>
               <Undefine></Undefine>
-              <IncludePath></IncludePath>
+              <IncludePath>.\Driver</IncludePath>
             </VariousControls>
           </Aads>
           <LDads>
@@ -389,9 +389,9 @@
               <FilePath>.\Src\principal.c</FilePath>
             </File>
             <File>
-              <FileName>Delay.s</FileName>
+              <FileName>Cligno.s</FileName>
               <FileType>2</FileType>
-              <FilePath>.\Src\Delay.s</FilePath>
+              <FilePath>.\Src\Cligno.s</FilePath>
             </File>
           </Files>
         </Group>
@@ -803,9 +803,9 @@
               <FilePath>.\Src\principal.c</FilePath>
             </File>
             <File>
-              <FileName>Delay.s</FileName>
+              <FileName>Cligno.s</FileName>
               <FileType>2</FileType>
-              <FilePath>.\Src\Delay.s</FilePath>
+              <FilePath>.\Src\Cligno.s</FilePath>
             </File>
           </Files>
         </Group>
@@ -1286,9 +1286,9 @@
               <FilePath>.\Src\principal.c</FilePath>
             </File>
             <File>
-              <FileName>Delay.s</FileName>
+              <FileName>Cligno.s</FileName>
               <FileType>2</FileType>
-              <FilePath>.\Src\Delay.s</FilePath>
+              <FilePath>.\Src\Cligno.s</FilePath>
             </File>
           </Files>
         </Group>
