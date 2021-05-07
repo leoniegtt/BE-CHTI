@@ -357,7 +357,7 @@
               <MiscControls></MiscControls>
               <Define></Define>
               <Undefine></Undefine>
-              <IncludePath></IncludePath>
+              <IncludePath>.\Driver</IncludePath>
             </VariousControls>
           </Aads>
           <LDads>
@@ -412,11 +412,6 @@
               <FileName>DriverJeuLaser.lib</FileName>
               <FileType>4</FileType>
               <FilePath>.\Driver\DriverJeuLaser.lib</FilePath>
-            </File>
-            <File>
-              <FileName>DriverJeuLaser.inc</FileName>
-              <FileType>5</FileType>
-              <FilePath>.\Driver\DriverJeuLaser.inc</FilePath>
             </File>
           </Files>
         </Group>
@@ -846,11 +841,6 @@
               <FileName>DriverJeuLaser.lib</FileName>
               <FileType>4</FileType>
               <FilePath>.\Driver\DriverJeuLaser.lib</FilePath>
-            </File>
-            <File>
-              <FileName>DriverJeuLaser.inc</FileName>
-              <FileType>5</FileType>
-              <FilePath>.\Driver\DriverJeuLaser.inc</FilePath>
             </File>
           </Files>
         </Group>
@@ -1349,11 +1339,6 @@
               <FileName>DriverJeuLaser.lib</FileName>
               <FileType>4</FileType>
               <FilePath>.\Driver\DriverJeuLaser.lib</FilePath>
-            </File>
-            <File>
-              <FileName>DriverJeuLaser.inc</FileName>
-              <FileType>5</FileType>
-              <FilePath>.\Driver\DriverJeuLaser.inc</FilePath>
             </File>
           </Files>
         </Group>

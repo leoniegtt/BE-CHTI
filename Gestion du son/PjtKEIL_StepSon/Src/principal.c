@@ -30,11 +30,7 @@ int main(void)
 while	(1)
 	{
 		StartSon();
-		for (int i=0;i<10000000;i++) {
-		}
-		StartSon();
-		for (int i=0;i<10000000;i++) {
-		}
+		for (int i=0;i<10000000;i++) {}
 	}
 }
 
