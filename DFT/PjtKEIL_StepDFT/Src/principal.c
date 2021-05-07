@@ -17,6 +17,7 @@ int main(void)
 // Après exécution : le coeur CPU est clocké à 72MHz ainsi que tous les timers
 CLOCK_Configure();
 
+	DFT_ModuleAuCarre(LeSignal, 17) ;
 	
 
 //============================================================================	
