@@ -357,7 +357,7 @@
               <MiscControls></MiscControls>
               <Define></Define>
               <Undefine></Undefine>
-              <IncludePath></IncludePath>
+              <IncludePath>.\Src</IncludePath>
             </VariousControls>
           </Aads>
           <LDads>
@@ -397,6 +397,11 @@
               <FileName>Signal.asm</FileName>
               <FileType>2</FileType>
               <FilePath>.\Src\Signal.asm</FilePath>
+            </File>
+            <File>
+              <FileName>Signal 85kHz.asm</FileName>
+              <FileType>2</FileType>
+              <FilePath>.\Src\Signal 85kHz.asm</FilePath>
             </File>
           </Files>
         </Group>
@@ -816,6 +821,11 @@
               <FileName>Signal.asm</FileName>
               <FileType>2</FileType>
               <FilePath>.\Src\Signal.asm</FilePath>
+            </File>
+            <File>
+              <FileName>Signal 85kHz.asm</FileName>
+              <FileType>2</FileType>
+              <FilePath>.\Src\Signal 85kHz.asm</FilePath>
             </File>
           </Files>
         </Group>
@@ -1304,6 +1314,11 @@
               <FileName>Signal.asm</FileName>
               <FileType>2</FileType>
               <FilePath>.\Src\Signal.asm</FilePath>
+            </File>
+            <File>
+              <FileName>Signal 85kHz.asm</FileName>
+              <FileType>2</FileType>
+              <FilePath>.\Src\Signal 85kHz.asm</FilePath>
             </File>
           </Files>
         </Group>

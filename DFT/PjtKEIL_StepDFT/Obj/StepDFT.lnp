@@ -2,6 +2,7 @@
 ".\obj\principal.o"
 ".\obj\dft.o"
 ".\obj\signal.o"
+".\obj\signal 85khz.o"
 ".\obj\startup-rvds.o"
 ".\Driver\DriverJeuLaser.lib"
 --library_type=microlib --strict --scatter ".\Obj\StepDFT.sct"

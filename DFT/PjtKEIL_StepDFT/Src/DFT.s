@@ -1,7 +1,7 @@
 	PRESERVE8
 	THUMB   
-		
-	import LeSignal
+	
+		EXPORT DFT_ModuleAuCarre
 ; ====================== zone de réservation de données,  ======================================
 ;Section RAM (read only) :
 	area    mesdata,data,readonly
@@ -23,30 +23,38 @@
 
 
 DFT_ModuleAuCarre proc 
-	push{lr, r4-r8}
+	push{lr, r4-r11}
 	mov r2, #0
-	ldr r4, =LeSignal
-	ldr r5, =TabCos
+	ldr r5, =TabCos 
+	ldr r4, =TabSin
 	mov r8, #0
+	mov r11, #0
 	
 Boucle
-	ldrsh r3, [r4, r2]
+	ldrsh r3, [r0, r2, lsl #1]
 	mul r7, r2, r1
-	and r7, #0x003F
-	ldrsh r6, [r5, r7]
+	and r7, #63
+	ldrsh r6, [r5, r7, lsl #1]
+	ldrsh r9, [r4, r7, lsl #1]
 	
-	mul r3, r6
+	mul r10, r3, r6
+	mul r3, r9
 	
 	add r8, r3
+	add r11, r10
 	
 	add r2, #1
 	
 	cmp r2, #64
 	bne Boucle
 	
+	mul r11, r11
+	mul r8, r8
+	add r8, r11
+	
 	mov r0, r8
 	
-	pop{pc, r4-r8}
+	pop{pc, r4-r11}
 	
 	endp
 
