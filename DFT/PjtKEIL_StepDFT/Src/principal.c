@@ -6,6 +6,8 @@
 
 extern short int LeSignal[];
 
+extern short int LeSignal85kHz[];
+
 int ResuDFT[64];
 
 int i;
