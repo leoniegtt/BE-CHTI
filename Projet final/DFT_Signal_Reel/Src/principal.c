@@ -9,11 +9,8 @@
 #include "GestionSon.h"
 
 
-int ResuDFT[4];
+int ResuDFT[4], Score[4], i, s[4], j;
 short int dma_buf[64];
-int Score[4];
-int seuil;
-int i, s[4], j;
 
 void callback_Systick()
 {
@@ -26,7 +23,9 @@ void callback_Systick()
 	for (j = 0; j < 4 ; j ++) {
 		if (ResuDFT[j] > 251658) {
 				if (s[j] == 0) {
+					// Lancement du son
 					StartSon();
+					// Mise à jour du score
 					Score[j] ++ ;
 				}
 				s[j] = 1 ;
@@ -53,6 +52,7 @@ int main(void)
 	SysTick_On;
 	SysTick_Enable_IT;
 		
+	// Initialisation des variables Score[] et s[]
 	for (int k = 0 ; k < 4 ; k ++){
 		Score[k] = 0;
 		s[k] = 0;
@@ -80,7 +80,11 @@ int main(void)
 
 	// Initialisation des périphériques
 	Init_Affichage();
-
+	for (int l = 0 ; l < 4 ; l ++){
+		Prepare_Afficheur(l, 0) ;
+	}
+	Prepare_Clear_LED(LED_Cible_1) ;
+	Mise_A_Jour_Afficheurs_LED() ;
 
 //============================================================================	
 	
