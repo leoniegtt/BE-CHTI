@@ -79,12 +79,13 @@ ARM Macro Assembler    Page 2
    67 0000007E 37 07           DCW              0x0737      ; 63 1847  0.45093
    68 00000080                 END
 Command Line: --debug --xref --diag_suppress=9931 --cpu=Cortex-M3 --apcs=interw
-ork --depend=".\obj\signal 85khz.d" -o".\obj\signal 85khz.o" -I.\Src -I.\RTE\_S
-imu -IC:\Programdata\Keil\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include -IC:\Pro
-gramdata\Keil\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include --predefine="__
-EVAL SETA 1" --predefine="__MICROLIB SETA 1" --predefine="__UVISION_VERSION SET
-A 530" --predefine="_RTE_ SETA 1" --predefine="STM32F10X_MD SETA 1" --predefine
-="_RTE_ SETA 1" --list=signal 85khz.lst "Src\Signal 85kHz.asm"
+ork --depend=".\obj\signal 85khz.d" -o".\obj\signal 85khz.o" -I.\Src\ModuleAffi
+chage -I.\RTE\_CibleSondeKEIL -IC:\Programdata\Keil\Arm\Packs\ARM\CMSIS\5.7.0\C
+MSIS\Core\Include -IC:\Programdata\Keil\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Devi
+ce\Include --predefine="__EVAL SETA 1" --predefine="__MICROLIB SETA 1" --predef
+ine="__UVISION_VERSION SETA 530" --predefine="_RTE_ SETA 1" --predefine="STM32F
+10X_MD SETA 1" --predefine="_RTE_ SETA 1" --list=signal 85khz.lst "Src\Signal 8
+5kHz.asm"
 
 
 

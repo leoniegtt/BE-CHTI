@@ -5,6 +5,7 @@
 ".\obj\signal 85khz.o"
 ".\obj\bruitverre.o"
 ".\obj\gestionson.o"
+".\Src\ModuleAffichage\affichage_valise.o"
 ".\obj\startup-rvds.o"
 ".\Driver\DriverJeuLaser.lib"
 --library_type=microlib --strict --scatter ".\Obj\StepDFT.sct"
